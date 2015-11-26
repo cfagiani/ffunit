@@ -1,0 +1,19 @@
+{
+"manifest_version": 2,
+    "name": "FF Unit",
+    "description": "Did you ever wonder just how big something is in football fields?",
+    "version": "1.0",
+    "icons":{"128":"icon128.png"},
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
